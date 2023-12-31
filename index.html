@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@1,300;1,400;1,700&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Walpepar</title>
+    <style>
+        body{
+            background: rgb(177, 84, 174);
+            display: flex;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            outline: none;
+            list-style: none;
+            font-family: 'Poppins', sans-serif;
+        }
+        :root{
+            --text-color: #fff;
+
+            --h2-font: 3rem;
+        }
+        .container{
+            width: 1280px;
+            height: 700px;
+            margin: 0 auto;
+            border: 3px solid red;
+            display: flex;
+        }
+        nav{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: red;
+            right: 0;
+            z-index: 1000;
+            padding: 15px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .50s ease;
+            float: left;
+        }
+        nav ul{
+            float: left;
+            display: flex;
+        }
+        nav ul li a{
+            padding: 10px 10px;
+            margin-left: 10px;
+            border-bottom: 1px solid white;
+            transition: all .50s ease;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            display: flex;
+        }
+        nav ul li a:hover{
+            color: black;
+            background: white;
+            transform: translateY(5px);
+        }
+        .home{
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(to left, rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url('https://img.freepik.com/free-vector/abstract-digital-grid-vector-black-background_53876-111550.jpg');
+            background-size: cover;
+            background-position: bottom center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .home-text{
+            margin-left: 40px;
+        }
+        .home-text h5{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            color: #ffa343;
+        }
+        .home-text h1{
+            font-size: 6rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+        .home-text p{
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 30px;
+            color: #FFFFFFAB;
+            margin-bottom: 35px;
+        }
+        .hb-btn{
+            padding: 10px 20px;
+            background: white;
+            border-radius: 0px 50px 50px 0px;
+            transition: all .50s ease;
+            color: #435cff;
+            font-weight: 600;
+        }
+        .hb-btn:hover{
+            transform: scale(1.1) translateX(10px);
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- start header  -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="https://data.mercedes-benz.com/products/vehicle-images">Mersedes images</a></li>
+                    <li><a href="https://www.bmw.com/en/index.html">Bmw images</a></li>
+                    <li><a href="https://supra-official.com/">Supra Images</a></li>
+                    <li><a href="https://www.nissanusa.com/">Nissan Images</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- start home -->
+        <section class="home">
+            <div class="home-text">
+                <h5>Let's</h5>
+                <h1>Planning</h1>
+                <p>A car, or an automobile, is a motor vehicle with wheels. Most definitions of cars state that they run primarily on roads, <br> seat one to eight people, have four wheels, and mainly transport people, not cargo.[1][2] French inventor Nicolas-Joseph <br> Cugnot built the first steam-powered road vehicle in 1769, while French-born Swiss inventor François Isaac de Rivaz designed and <br> constructed the first internal combustion-powered automobile in 1808.</p>
+                <a href="https://www.lamborghini.com/en-en" class="hb-btn">Lambarghini</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
